@@ -27,7 +27,7 @@ class TestTransferenciaBancaria {
 		transferenciaBancaria.transferirSaldo(contaDoFulano, 0));
 		
 		// "assertDoesNotThrow" faz o contrário: ele verifica se um método NÃO lançará uma exceção. Ou seja, caso lance, retorna false.
-		// diferente do "assertThrows", o "assertDoesNotThrow" recebe apenas um supplier
+		// diferente do "assertThrows", o "assertDoesNotThrow" recebe apenas um supplier, o que significa que nosso foco é validar se não lançará qualquer exceção.
 		assertDoesNotThrow(() -> transferenciaBancaria.transferirSaldo(contaDoFulano, 0));
 	}
 	
